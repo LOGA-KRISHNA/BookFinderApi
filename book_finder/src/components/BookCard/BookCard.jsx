@@ -46,9 +46,18 @@ const BookCard = ({
 
   const getCoverUrl = () => {
     if (imageError) return null;
-    return book.cover_url || book.coverUrl || book.cover_i 
-      ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
-      : null;
+
+    if (book.coverUrl) {
+      return book.coverUrl; // already a full URL
+    } else if (book.cover_url) {
+      return book.cover_url; // alternate field
+    } else if (book.cover_i) {
+      return `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
+    }
+    console.log(book);
+    
+
+    return null;
   };
 
   return (
@@ -82,12 +91,12 @@ const BookCard = ({
               </div>
             )}
             
-            {book.publishYear && (
+            {book.publishYear || book.firstPublishYear ? (
               <div className="meta-item">
                 <Calendar className="meta-icon" />
-                <span>{book.publishYear}</span>
+                <span>{book.publishYear || book.firstPublishYear}</span>
               </div>
-            )}
+            ) : null}
             
             {book.publisher && (
               <div className="meta-item">
