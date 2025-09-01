@@ -1,0 +1,117 @@
+/* src/components/SearchPage/SearchPage.css */
+
+.search-page {
+  width: 100%;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-page-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.search-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+.search-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.results-section {
+  margin-top: 2rem;
+}
+
+.search-tips {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.tips-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem 0;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-list li {
+  padding: 0.5rem 0;
+  color: #4b5563;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.tips-list li:before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+.tips-list li:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Animation for search results */
+.results-section {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .search-title {
+    font-size: 1.5rem;
+  }
+  
+  .search-subtitle {
+    font-size: 1rem;
+  }
+  
+  .search-page-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .search-tips {
+    padding: 1rem;
+  }
+}
