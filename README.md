@@ -52,7 +52,7 @@ You can access the live application here:
 
 **Create MySQL Database**:
 ```sql
-CREATE DATABASE bookdb;
+CREATE DATABASE book-finder;
 
 
 
@@ -80,7 +80,7 @@ CREATE DATABASE bookdb;
 
 5. **Verify backend is running**
    - API Base URL: `http://localhost:8080/api/books`
-   - Health Check: `http://localhost:8080/actuator/health` (if actuator is enabled)
+   - Health Check: `http://localhost:8080/api/books/test-api` 
 
 ### 3. Frontend Setup
 
@@ -95,8 +95,6 @@ CREATE DATABASE bookdb;
 2. **Install dependencies**
    ```bash
    npm install
-   # or if using additional packages
-   npm install axios react-router-dom
    ```
 
 3. **Start the React development server**
