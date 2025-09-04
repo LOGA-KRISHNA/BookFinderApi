@@ -1,6 +1,6 @@
 // src/services/bookService.js
 
-const API_BASE_URL = 'http://localhost:8080/api/books';
+const API_BASE_URL = 'https://backendbookfinderapi-e5d2dkgperaef2g5.southindia-01.azurewebsites.net/api/books';
 
 class BookService {
   
