@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React, { useState } from 'react';
 import { BookOpen, Search, Heart } from 'lucide-react';
 import SearchPage from './components/SearchPage/SearchPage';
@@ -19,7 +17,7 @@ const App = () => {
   // Hide message
   const hideMessage = () => {
     setMessage(null);
-  };
+  };  
 
   return (
     <div className="app">
@@ -72,7 +70,7 @@ const App = () => {
         {/* Footer */}
         <footer className="app-footer">
           <p className="footer-text">
-            Built with React + Spring Boot + PostgreSQL
+            Built with React + Spring Boot + Mysql + Azure
           </p>
           <div className="footer-links">
             <a 
