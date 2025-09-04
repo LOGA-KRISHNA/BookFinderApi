@@ -72,7 +72,7 @@ const App = () => {
         {/* Footer */}
         <footer className="app-footer">
           <p className="footer-text">
-            Built with React + Spring Boot + PostgreSQL
+            Built with React + Spring Boot + Mysql + Azure
           </p>
           <div className="footer-links">
             <a 
