@@ -41,7 +41,11 @@ A full-stack web application built with **React.js** frontend and **Spring Boot*
 
 ### Other
 - **Internet Connection** (for Open Library API)
+- 
+## 🌐 Hosted App
 
+You can access the live application here:
+[https://red-pebble-0362a9c00.1.azurestaticapps.net/](https://red-pebble-0362a9c00.1.azurestaticapps.net/)
 ## 🚀 Quick Start
 
 ### 1. Database Setup
@@ -50,10 +54,7 @@ A full-stack web application built with **React.js** frontend and **Spring Boot*
 ```sql
 CREATE DATABASE bookdb;
 
-## 🌐 Hosted App
 
-You can access the live application here:
-[https://red-pebble-0362a9c00.1.azurestaticapps.net/](https://red-pebble-0362a9c00.1.azurestaticapps.net/)
 
 ```
 
