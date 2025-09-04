@@ -49,6 +49,12 @@ A full-stack web application built with **React.js** frontend and **Spring Boot*
 **Create MySQL Database**:
 ```sql
 CREATE DATABASE bookdb;
+
+## 🌐 Hosted App
+
+You can access the live application here:
+[https://red-pebble-0362a9c00.1.azurestaticapps.net/](https://red-pebble-0362a9c00.1.azurestaticapps.net/)
+
 ```
 
 ### 2. Backend Setup
